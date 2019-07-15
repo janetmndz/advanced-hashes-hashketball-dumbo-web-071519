@@ -159,6 +159,7 @@ end
 def big_shoe_rebounds
   shoe_rebound = {:shoe => 0, :rebounds => 0}
   game_hash.each {|team, team_data|
+    binding.pry
     team_data[:players].each{ |player, player_stats|
       if player_stats[:shoe] > shoe_rebound[:shoe]
         shoe_rebound[:shoe] = player_stats[:shoe]
