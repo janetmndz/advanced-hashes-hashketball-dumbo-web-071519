@@ -162,6 +162,7 @@ def big_shoe_rebounds
     binding.pry
     team_data[:players].each{ |player, player_stats|
       if player_stats[:shoe] > shoe_rebound[:shoe]
+        binding.pry
         shoe_rebound[:shoe] = player_stats[:shoe]
         shoe_rebound[:rebounds] = player_stats[:rebounds]
       end
